@@ -1,15 +1,16 @@
 import React from 'react';
+import James from './James';
+import Card from './Card';
+//import Container from "./ContainerNaive";
+import Container from './ContainerJames';
 import { hot } from 'react-hot-loader';
-import Container from './ContainerNaive';
 
-class App extends React.Component {
-  render() {
-    return [
-      <div className="button-container">
-        <Container />
-      </div>,
-    ];
-  }
-}
+const App = () => (
+  <div>
+    <James />
+    <Card text="Write the docs" />
+    <Container />
+  </div>
+);
 
 export default hot(module)(App);

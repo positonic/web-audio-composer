@@ -4,7 +4,7 @@ import update from 'immutability-helper';
 import { DropTarget, DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import ItemTypes from './ItemTypes';
-import Box from './Box';
+import Box from './BoxJames';
 import Connector from './Connector';
 import Menu from './Menu';
 import PlayButton from './controls/PlayButton';
@@ -33,48 +33,16 @@ const mapDispatchToProps = dispatch => {
   return bindActionCreators(actionCreators, dispatch);
 };
 
-const boxTarget = {
-  drop(props, monitor, component) {
-    const item = monitor.getItem();
-    const delta = monitor.getDifferenceFromInitialOffset();
-    const left = Math.round(item.left + delta.x);
-    const top = Math.round(item.top + delta.y);
-
-    component.moveBox(item.id, left, top);
-  },
-};
-
-@DragDropContext(HTML5Backend)
-@DropTarget(ItemTypes.BOX, boxTarget, connect => ({
-  connectDropTarget: connect.dropTarget(),
-}))
 class Container extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      forbidDrag: false,
-    };
-
     this.makeConnection = this.makeConnection.bind(this);
-    this.mouseUp = this.mouseUp.bind(this);
     this.addNode = this.addNode.bind(this);
     this.playButtonClick = this.playButtonClick.bind(this);
   }
 
   componentDidMount() {}
-
-  moveBox(id, left, top) {
-    this.setState(
-      update(this.state, {
-        boxes: {
-          [id]: {
-            $merge: { left, top },
-          },
-        },
-      }),
-    );
-  }
 
   makeConnection(eventDetails) {
     var mouseIsDown = eventDetails.mouse === 'down';
@@ -169,18 +137,6 @@ class Container extends Component {
     return newState;
   }
 
-  /*handleToggleForbidDrag() {
-
-        this.setState({
-            forbidDrag: !this.state.forbidDrag,
-        });
-    }*/
-  mouseUp(event) {
-    this.setState({
-      forbidDrag: false,
-    });
-  }
-
   renderConnections(connections) {
     if (connections) {
       return (
@@ -218,29 +174,12 @@ class Container extends Component {
   }
 
   addNode(type) {
-    /*var newState = JSON.parse(JSON.stringify(this.state));
-
-		newState.boxes[type + (Object.keys(newState.boxes).length + 1)] = makeNode(
-			config,
-		);
-    newState
-*/
     let newNode = makeNode({
       itemType: ItemTypes.NODE,
       type: type,
     });
 
     this.props.addBox(newNode);
-
-    /*
-
-    var newState = JSON.parse(JSON.stringify(this.state));
-
-    newState.boxes[type + (Object.keys(newState.boxes).length + 1)] = makeNode(
-      config,
-    );
-
-    this.setState(newState);*/
   }
 
   playButtonClick() {
@@ -252,20 +191,16 @@ class Container extends Component {
         nodes.push(boxes[property].node);
       }
     }
-    /*{boxes.map((value, key) => {
 
-            nodes.push(value.node);
-
-        })}*/
-    /*debugger*/
     Play(nodes);
   }
 
   render() {
-    const { hideSourceOnDrag, connectDropTarget } = this.props;
+    const hideSourceOnDrag = true;
     const { boxes, connections } = this.props;
     const leftMargin = 180;
-    return connectDropTarget(
+
+    return (
       <div style={styles} onMouseUp={this.mouseUp}>
         <Menu addNode={this.addNode}>
           <PlayButton
@@ -305,7 +240,7 @@ class Container extends Component {
             </Box>
           );
         })}
-      </div>,
+      </div>
     );
   }
 }
