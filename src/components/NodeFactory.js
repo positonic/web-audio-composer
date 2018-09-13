@@ -4,12 +4,12 @@ var baseNode = {
   title: 'Drag me around',
   connectors: {
     inputOffset: {
-      top: 0,
+      top: -110,
       left: 0,
     },
     outputOffset: {
-      top: 100,
-      left: 5,
+      top: -25,
+      left: 150,
     },
   },
   node: {},
@@ -78,9 +78,15 @@ function makeOscillator(config) {
     },
   };
 
-  baseNode.node = node;
+  let returnNode = {
+    ...baseNode,
+    node: node,
+    left: config.left,
+  };
+  /*baseNode.node = node;
+  baseNode.left = config.left;*/
 
-  return baseNode;
+  return returnNode;
 }
 
 function makeFilter(config) {
@@ -129,6 +135,4 @@ export function makeNode(config) {
   if (isGain(config.type)) {
     return makeGain(config);
   }
-
-  return newNode;
 }

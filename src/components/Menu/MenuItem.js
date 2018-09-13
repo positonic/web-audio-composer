@@ -5,7 +5,7 @@ import sineIcon from '../../../images/oscillator_sine.png';
 import sawIcon from '../../../images/oscillator_saw.png';
 import squareIcon from '../../../images/oscillator_square.png';
 import lowPassFilterIcon from '../../../images/filter_lowpass.png';
-/*import filterControlsIcon from '../../../images/filter_controls.png';*/
+import filterControlsIcon from '../../../images/filter_controls.png';
 
 /*import gainIcon from '../../../images/gain.png';*/
 
@@ -16,12 +16,6 @@ export default class OscMenuItem extends Component {
     this.addNode = this.addNode.bind(this);
   }
 
-  /*left: this.props.node.positionX,
-     top: this.props.node.positionY,
-     position: 'absolute',
-     background: '#86a5d6',
-     border: '1px solid #7589a8',
-     borderRadius: '5px'*/
   addNode(event) {
     this.props.handleClick(this.props.type);
   }

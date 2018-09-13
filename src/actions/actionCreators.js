@@ -18,3 +18,10 @@ export function addNode(node) {
     node,
   };
 }
+
+export function addConnector(connector) {
+  return {
+    type: 'ADD_CONNECTOR',
+    connector,
+  };
+}

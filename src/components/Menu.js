@@ -12,6 +12,10 @@ export default class Menu extends Component {
     this.props.addNode(type);
   }
 
+  comingSoon() {
+    alert('Filters are coming soon');
+  }
+
   render() {
     return (
       <div
@@ -32,6 +36,7 @@ export default class Menu extends Component {
         <MenuItem type="sawtooth" handleClick={this.handleClick} />
         <MenuItem type="square" handleClick={this.handleClick} />
         <MenuItem type="gain" handleClick={this.handleClick} />
+        <MenuItem type="filterControls" handleClick={this.comingSoon} />
         {/*<MenuItem type="lowPassFilter" handleClick={this.handleClick}/>*/}
         {/*<MenuItem type="filterControls" handleClick={this.handleClick}/>*/}
         {this.props.children}

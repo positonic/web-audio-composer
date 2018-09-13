@@ -10,6 +10,10 @@ export default class Connector extends Component {
     this.mouseUp = this.mouseUp.bind(this);
   }
 
+  getPositionStyle() {
+    return this.props.type == 'input' ? { left: 0 } : { right: 0 };
+  }
+
   getColour() {
     return this.props.type == 'input' ? 'yellow' : 'blue';
   }
@@ -63,6 +67,9 @@ export default class Connector extends Component {
           height: '20px',
           width: '20px',
           background: this.getColour(),
+          position: 'absolute',
+          right: 0,
+          ...this.getPositionStyle(),
         }}
       >
         {this.getText()}

@@ -25,11 +25,9 @@ export function Play(nodes) {
   let voice = Voice(context, voiceConfig);
 
   var masterVca = voice.setupOscillators();
-  //if(voiceConfig.filters.length)
-  //let filterInput = voice.setUpFilters(voiceConfig.filters, masterVca, context.destination);
-  //let filterInput =
+
   voice.setUpFilters(voiceConfig.filters, masterVca, context.destination);
-  console.log('play');
+
   voice.play();
 }
 
