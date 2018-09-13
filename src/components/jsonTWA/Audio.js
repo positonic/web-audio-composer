@@ -1,7 +1,21 @@
 'use strict';
 import { Voice } from './Voice';
 import { isOscillatorNode, isFilterNode, isGainNode } from '../NodeUtil';
-export function Play(nodes) {
+
+let voices = [];
+
+function stopAllVoices(voices) {
+  voices.forEach(voice => {
+    voice.stopAll();
+  });
+}
+
+export function Play(nodes, makePlay) {
+  if (makePlay === false) {
+    stopAllVoices(voices);
+    return;
+  }
+
   const context = new AudioContext();
 
   var oscillators = [];
@@ -24,11 +38,14 @@ export function Play(nodes) {
   console.log(voiceConfig.oscillators);
   let voice = Voice(context, voiceConfig);
 
+  //var masterVca = voice.setupRoutedOscillators();
   var masterVca = voice.setupOscillators();
 
   voice.setUpFilters(voiceConfig.filters, masterVca, context.destination);
 
   voice.play();
+
+  voices.push(voice);
 }
 
 const voiceConfig = {

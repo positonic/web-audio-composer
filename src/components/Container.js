@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { getIcon } from '../modules/icons';
+import { getTopPosition } from '../components/NodeUtil';
 import ItemTypes from './ItemTypes';
 import Box from './Box';
 import Connector from './Connector';
 import Menu from './Menu';
 import PlayButton from './controls/PlayButton';
 import { makeNode } from './NodeFactory';
-import logo from '../../images/logo.png';
 
 import { Play } from './jsonTWA/Audio';
 import { bindActionCreators } from 'redux';
 import * as actionCreators from '../actions/actionCreators';
 import connect from 'react-redux/es/connect/connect';
-import MenuItem from './Menu/MenuItem';
+
+const leftMargin = 180;
 
 const styles = {
   width: '100%',
@@ -54,23 +55,12 @@ class Container extends Component {
 
     let newState = this.state;
 
-    console.log(
-      'makeConnection',
-      mouseIsDown,
-      eventDetails,
-      newState.downConnector,
-    );
     if (mouseIsDown) {
+      console.log('eventDetails', eventDetails);
       newState.downConnector.nodeId = eventDetails.nodeId;
       newState.downConnector.connectorType = eventDetails.connectorType;
       newState.mouseIsDown = mouseIsDown;
     } else {
-      console.log(
-        '!!!!! make a connection between - ' +
-          this.state.downConnector.nodeId +
-          ' and ' +
-          eventDetails.nodeId,
-      );
       newState = this.updateNodeState(this.state, newState, eventDetails);
       newState.downConnector = {};
       newState.mouseIsDown = !mouseIsDown;
@@ -132,13 +122,15 @@ class Container extends Component {
           {connections.map((value, key) => {
             return (
               <line
+                key={key}
                 x1={
                   this.props.boxes[value.output].left +
                   this.props.boxes[value.output].connectors.outputOffset.left
                 }
                 y1={
                   this.props.boxes[value.output].top +
-                  this.props.boxes[value.output].connectors.outputOffset.top
+                  this.props.boxes[value.output].connectors.outputOffset.top +
+                  140
                 }
                 x2={
                   this.props.boxes[value.input].left +
@@ -146,7 +138,8 @@ class Container extends Component {
                 }
                 y2={
                   this.props.boxes[value.input].top +
-                  this.props.boxes[value.input].connectors.inputOffset.top
+                  this.props.boxes[value.input].connectors.inputOffset.top +
+                  140
                 }
                 strokeWidth="2"
                 stroke="#FC9C43"
@@ -161,68 +154,61 @@ class Container extends Component {
   addNode(type) {
     let noBoxes = Object.keys(this.props.boxes).length;
 
-    const leftMargin = 180;
     let left = leftMargin + noBoxes * 180;
-    console.log('left1a is ', left);
 
     let newNode = makeNode({
       itemType: ItemTypes.NODE,
       type: type,
-      left: left,
     });
+    newNode.top = getTopPosition(type);
+    newNode.left = left;
 
-    console.log('left2 is ', newNode.left);
-
+    console.log('newNode', newNode);
     this.props.addBox(newNode);
   }
 
-  playButtonClick() {
-    var boxes = this.props.boxes;
-    var nodes = [];
+  playButtonClick(makePlay) {
+    let boxes = this.props.boxes;
+    let nodes = [];
 
-    for (var property in boxes) {
+    for (let property in boxes) {
       if (boxes.hasOwnProperty(property)) {
-        nodes.push(boxes[property].node);
+        let node = boxes[property].node;
+        node.id = property;
+        nodes.push(node);
       }
     }
 
-    Play(nodes);
+    Play(nodes, makePlay);
   }
 
   render() {
     const hideSourceOnDrag = true;
     const { boxes, connections } = this.props;
-    const leftMargin = 180;
 
     return (
       <div style={styles} onMouseUp={this.mouseUp}>
         <h3>Web audio composer</h3>
-        <Menu addNode={this.addNode}>
-          <PlayButton
-            style={{ fontSize: '120px', border: 'none', background: 'none' }}
-            playButtonClick={this.playButtonClick}
-            class="mainPlay"
-          />
-        </Menu>
+        <PlayButton
+          style={{ fontSize: '120px', border: 'none', background: 'none' }}
+          playButtonClick={this.playButtonClick}
+          class="mainPlay"
+        />
+        <Menu addNode={this.addNode} />
 
         {this.renderConnections(connections)}
 
         {Object.keys(boxes).map((key, index) => {
           //const { left, top, title } = boxes[key];
 
-          const { title, type, waveform } = boxes[key].node;
+          const { type, waveform } = boxes[key].node;
+          const { top } = boxes[key];
 
-          let top;
-          if (type === 'oscillator') {
-            top = 0;
-          } else if (type === 'filter') {
-            top = 120;
-          } else {
-            top = 240;
-          }
+          //let top = getTopPosition(type);
+          const icon = type === 'oscillator' ? waveform : type;
+
           const left = leftMargin + index * 180;
-          console.log('jd left manual', left);
-          console.log('jd left box', key, boxes[key].left);
+
           return (
             <Box
               key={key}
@@ -239,7 +225,7 @@ class Container extends Component {
               />
               <img
                 style={{ width: '40%', marginTop: '25px' }}
-                src={getIcon(waveform)}
+                src={getIcon(icon)}
               />
               <Connector
                 makeConnection={this.makeConnection}

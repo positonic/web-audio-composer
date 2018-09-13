@@ -19,6 +19,6 @@ export function getIcon(type) {
   } else if (type === 'lowPassFilter') {
     return lowPassFilterIcon;
   } else if (type === 'filterControls') {
-    return filterControlsIcon;
+    return lowPassFilterIcon;
   }
 }

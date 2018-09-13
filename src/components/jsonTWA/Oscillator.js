@@ -1,6 +1,6 @@
 export const Oscillator = (audioContext, voiceConfig) => {
   let oscillators = [];
-
+  let delayedRoutingNodes = []; //This oscillators didn't yet exist when we tried to connect them so now we try again
   let masterVca = audioContext.createGain();
 
   masterVca.gain.value = voiceConfig.gain / 100;
@@ -43,6 +43,45 @@ export const Oscillator = (audioContext, voiceConfig) => {
       return vco;
     },
 
+    createOscillatorWithRouting(oscConfig) {
+      let myOscillators = oscillators;
+      let vco = audioContext.createOscillator();
+      vco.type = oscConfig.waveform;
+      vco = me.applyTuning(vco, oscConfig.tuning);
+      vco = me.setPipeLengthOnOscillator(vco, oscConfig.pipeLength);
+
+      if (oscConfig.connections.output.find(o => o.indexOf('gain') > -1)) {
+        console.log('Connecting ', oscConfig.id, ' to gain node');
+        me.connectInputToVca(me.addOscillatorGain(vco, oscConfig.gain));
+      } else if (
+        oscConfig.connections.output.find(o => o.indexOf('oscillator') > -1)
+      ) {
+        console.log('Connecting ', oscConfig.id, ' to another oscillator node');
+
+        oscConfig.connections.output.forEach(destinationNodeId => {
+          //Do we have the oscillatory already?
+
+          let destinationNode = oscillators.find(
+            o => o.id === destinationNodeId,
+          );
+          if (destinationNode) {
+            //connect to it
+            me.connect(destinationNode);
+          } else {
+            // add it to a list we parse later
+            console.log('Cant find ', destinationNodeId, ' will try later');
+            let toConnect = {};
+            toConnect[destinationNodeId] = vco;
+            delayedRoutingNodes.push(toConnect);
+          }
+        }, this);
+      }
+
+      vco.id = oscConfig.id;
+
+      return vco;
+    },
+
     connectInputToVca: node => {
       node.connect(masterVca);
     },
@@ -65,6 +104,14 @@ export const Oscillator = (audioContext, voiceConfig) => {
       });
     },
 
+    stopAll: () => {
+      console.log('stopall', oscillators);
+      oscillators.forEach(osc => {
+        osc.stop();
+        console.log('osc', osc);
+      });
+    },
+
     start: (vco, time, noteLength, frequency) => {
       vco.frequency.value = me.applyPipeLength(frequency, vco.pipeLength);
 
@@ -80,6 +127,47 @@ export const Oscillator = (audioContext, voiceConfig) => {
       voiceConfig.oscillators.forEach(osc => {
         oscillators.push(me.createOscillator(osc));
       });
+
+      //me.connectVcaToOutput(output);
+      return masterVca;
+    },
+
+    setupRoutedOscillators() {
+      voiceConfig.oscillators.forEach(osc => {
+        oscillators.push(me.createOscillatorWithRouting(osc));
+      });
+
+      for (let destinationNodeId in delayedRoutingNodes) {
+        let delayedSourceNode = delayedRoutingNodes[destinationNodeId];
+
+        oscillators.forEach(oscillator => {
+          if (delayedSourceNode.hasOwnProperty(oscillator.id)) {
+            delayedSourceNode[oscillator.id].connect(oscillator);
+            console.log(
+              'Delay connected ',
+              delayedSourceNode.id,
+              destinationNodeId,
+            );
+          }
+        });
+
+        if (destinationNode) {
+          delayedSourceNode.connect(destinationNode);
+        } else {
+          console.log(
+            'This should never happen because we have delayed connection until all nodes are created',
+          );
+        }
+
+        /*let destinationNode = oscillators.find(o => delayedSourceNode.hasOwnProperty(o.id));
+				debugger
+				if(destinationNode) {
+					delayedSourceNode.connect(destinationNode)
+					console.log('Delay connected ', delayedSourceNode.id, destinationNodeId);
+        } else {
+					console.log('This should never happen because we have delayed connection until all nodes are created');
+        }*/
+      }
 
       //me.connectVcaToOutput(output);
       return masterVca;

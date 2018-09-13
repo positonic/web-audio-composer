@@ -11,6 +11,7 @@ const defaultState = {
 
 const store = createStore(rootReducer, defaultState);
 
+store.subscribe(() => console.log('subscribe', store.getState()));
 render(
   <Provider store={store}>
     <App />

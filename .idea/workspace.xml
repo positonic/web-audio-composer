@@ -4,35 +4,15 @@
     <list default="true" id="5fabcb79-897f-4f9b-9ff7-0a1ca919a232" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Appbroken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AudioTool/ConnectionsCanvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Box.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Box.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BoxInput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BoxJames.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BoxOutput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Canvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Connector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Connector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContainerBoxes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContainerJames.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContainerNaive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dustbin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/James.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/JamesPresentational.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Knight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/MenuItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/MenuItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NodeBAck.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Node.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NodeFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NodeFactory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Price.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Square.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NodeUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NodeUtil.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/jsonTWA/Audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/jsonTWA/Audio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/jsonTWA/Oscillator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/jsonTWA/Oscillator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/boxes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/boxes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/icons.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,36 +81,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="4" />
-          <entry key="js" value="78" />
+          <entry key="html" value="6" />
+          <entry key="js" value="108" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="png" value="1" />
-          <entry key="ts" value="2" />
+          <entry key="png" value="2" />
+          <entry key="rnc" value="1" />
+          <entry key="ts" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="4" />
-          <entry key="Image" value="1" />
+          <entry key="HTML" value="6" />
+          <entry key="Image" value="2" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="78" />
+          <entry key="JavaScript" value="108" />
           <entry key="Markdown" value="1" />
-          <entry key="TypeScript" value="2" />
+          <entry key="RNG Compact" value="1" />
+          <entry key="TypeScript" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="70" />
-          <entry key="js" value="3260" />
+          <entry key="html" value="212" />
+          <entry key="js" value="5427" />
           <entry key="json" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="70" />
+          <entry key="HTML" value="212" />
           <entry key="JSON" value="25" />
-          <entry key="JavaScript" value="3260" />
+          <entry key="JavaScript" value="5427" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.command.options" />
@@ -151,7 +133,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -162,74 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Container.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="208" column="11" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Connector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-              <folding>
-                <element signature="e#152#185#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Menu/MenuItem.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="16" selection-start-line="5" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/boxes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Menu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+            <state relative-caret-position="403">
+              <caret line="175" column="13" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -238,19 +154,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/src/components/jsonTWA/Audio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="456">
+              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+              <folding>
+                <element signature="e#14#46#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/actionCreators.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Connector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="209">
+              <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+              <folding>
+                <element signature="e#152#185#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/jsonTWA/Voice.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/jsonTWA/Oscillator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="123" column="20" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/controls/PlayButton.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Box.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/NodeFactory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -259,48 +238,49 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;box</find>
-      <find>type</find>
-      <find>typeimg</find>
-      <find>getMarginTop</find>
-      <find>img</find>
-      <find>connections</find>
-      <find>left</find>
-      <find>getColour</find>
-      <find>getPositionStyle</find>
+      <find>line</find>
+      <find>top</find>
+      <find>getTopPosition</find>
+      <find>Node</find>
+      <find>makeNode</find>
+      <find>addNode</find>
+      <find>&lt;line</find>
+      <find>mouseUp</find>
+      <find>oscillator</find>
+      <find>debugger</find>
+      <find>280</find>
+      <find>makeOscillator</find>
+      <find>&lt;lin</find>
+      <find>web audio</find>
+      <find>playButtonClick</find>
+      <find>stop</find>
       <find>outputOffset</find>
-      <find>outputOffsetoutputOffset</find>
-      <find>150px</find>
-      <find>mouseIsDown</find>
-      <find>playbutton</find>
-      <find>mouseIsUp</find>
-      <find>JamesPresentat</find>
-      <find>Constants</find>
-      <find>Card</find>
-      <find>DrawConnections</find>
-      <find>createLineSegments</find>
-      <find>AudioTool</find>
-      <find>MenuItems</find>
-      <find>OscMenuItem</find>
-      <find>squareIcon</find>
-      <find>MenuItem</find>
-      <find>lin</find>
-      <find>downConnector</find>
-      <find>addConnector</find>
-      <find>logo</find>
-      <find>filterControlsIcon</find>
+      <find>context</find>
+      <find>stopAll</find>
+      <find>play</find>
+      <find>createOscillator</find>
+      <find>createOscillatorWithRouting</find>
+      <find>oscillators</find>
+      <find>tryLinkOscToOsc</find>
+      <find>delayedRoutingOscillators</find>
+      <find>delayedRoutingNodes</find>
+      <find>inputNode</find>
+      <find>addOscillatorGain</find>
+      <find>Play</find>
+      <find>delayedRoutingNodes[destinationNodeId]</find>
     </findStrings>
     <replaceStrings>
       <replace>../../../images</replace>
       <replace>state</replace>
       <replace>type</replace>
       <replace>this.props</replace>
+      <replace>delayedSourceNode</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/node_modules/@babel</dir>
-      <dir>$PROJECT_DIR$/src/components</dir>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/src/components</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -315,10 +295,8 @@
         <option value="$PROJECT_DIR$/src/components/BoxOutput.js" />
         <option value="$PROJECT_DIR$/src/components/Dustbin.js" />
         <option value="$PROJECT_DIR$/src/components/Knight.js" />
-        <option value="$PROJECT_DIR$/src/components/Node.js" />
         <option value="$PROJECT_DIR$/src/components/NodeBAck.js" />
         <option value="$PROJECT_DIR$/src/components/Square.js" />
-        <option value="$PROJECT_DIR$/src/components/controls/PlayButton.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/Board.js" />
@@ -331,26 +309,30 @@
         <option value="$PROJECT_DIR$/src/components/JamesPresentational.js" />
         <option value="$PROJECT_DIR$/src/components/JamesCard.js" />
         <option value="$PROJECT_DIR$/src/components/Card.js" />
-        <option value="$PROJECT_DIR$/src/modules/icons.js" />
         <option value="$PROJECT_DIR$/src/reducers/downConnector.js" />
         <option value="$PROJECT_DIR$/src/actions/actionCreators.js" />
         <option value="$PROJECT_DIR$/src/reducers/connectors.js" />
         <option value="$PROJECT_DIR$/src/components/ContainerNaive.js" />
         <option value="$PROJECT_DIR$/src/reducers/boxes.js" />
-        <option value="$PROJECT_DIR$/src/components/Connector.js" />
         <option value="$PROJECT_DIR$/src/components/BoxJames.js" />
-        <option value="$PROJECT_DIR$/src/components/NodeFactory.js" />
-        <option value="$PROJECT_DIR$/src/components/jsonTWA/Audio.js" />
         <option value="$PROJECT_DIR$/src/components/ContainerJames.js" />
         <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/components/Constants.js" />
         <option value="$PROJECT_DIR$/src/components/Menu/MenuItem.js" />
         <option value="$PROJECT_DIR$/src/components/Box.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/components/Menu.js" />
-        <option value="$PROJECT_DIR$/src/components/Container.js" />
+        <option value="$PROJECT_DIR$/src/components/Node.js" />
+        <option value="$PROJECT_DIR$/src/modules/icons.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Connector.js" />
+        <option value="$PROJECT_DIR$/src/components/NodeUtil.js" />
+        <option value="$PROJECT_DIR$/src/components/NodeFactory.js" />
+        <option value="$PROJECT_DIR$/src/components/controls/PlayButton.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/components/Container.js" />
+        <option value="$PROJECT_DIR$/src/components/jsonTWA/Oscillator.js" />
+        <option value="$PROJECT_DIR$/src/components/jsonTWA/Audio.js" />
       </list>
     </option>
   </component>
@@ -393,6 +375,17 @@
             <path>
               <item name="web-audio-composer" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-audio-composer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-audio-composer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-audio-composer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web-audio-composer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web-audio-composer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -446,23 +439,23 @@
       <workItem from="1536761183392" duration="4801000" />
       <workItem from="1536768842642" duration="33930000" />
       <workItem from="1536850681480" duration="3439000" />
-      <workItem from="1536860350686" duration="3017000" />
+      <workItem from="1536860350686" duration="18801000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59335000" />
+    <option name="totallyTimeSpent" value="75119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1682" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14565483" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14565483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.28478965" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.13484359" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32901555" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -504,34 +497,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/clean-webpack-plugin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-201">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ContainerBoxes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dnd/lib/DragDropContext.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -621,13 +586,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Board.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Appbroken.js" />
-    <entry file="file://$PROJECT_DIR$/src/modules/icons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ContainerNaive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -636,20 +594,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BoxInput.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/jsonTWA/Audio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NodeFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BoxOutput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -661,13 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="85" column="29" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Node.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -705,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AudioTool/__ConnectionsCanvas.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -719,42 +649,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DrawConnections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/controls/PlayButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/filter_controls.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Box.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Connector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="e#152#185#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/connectors.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -770,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/boxes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -787,32 +676,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menu/MenuItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="16" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/components/Node.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Menu.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -824,20 +689,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Container.js">
+    <entry file="file://$PROJECT_DIR$/images/velocity.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/icons.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="208" column="11" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="11" />
+        <state relative-caret-position="228">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menu/MenuItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-537">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="184" column="4" selection-start-line="184" selection-start-column="4" selection-end-line="184" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/boxes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DrawConnections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NodeUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NodeFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/controls/PlayButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Box.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/src/components/Constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        <state relative-caret-position="19">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Connector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+          <folding>
+            <element signature="e#152#185#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="175" column="13" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/jsonTWA/Voice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/jsonTWA/Oscillator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="123" column="20" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/jsonTWA/Audio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <element signature="e#14#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

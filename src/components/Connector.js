@@ -15,6 +15,9 @@ export default class Connector extends Component {
   }
 
   getColour() {
+    if (this.state.mouseIsDown === true) {
+      return '#FCB47C';
+    }
     return this.props.type == 'input' ? 'yellow' : 'blue';
   }
 
@@ -43,6 +46,8 @@ export default class Connector extends Component {
   }
 
   mouseUp(event) {
+    console.log('this.state.mouseIsDown', this.state.mouseIsDown);
+
     if (this.state.mouseIsDown === true) {
       this.setState({ mouseIsDown: false });
     } else {

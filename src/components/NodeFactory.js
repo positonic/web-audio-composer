@@ -4,8 +4,8 @@ var baseNode = {
   title: 'Drag me around',
   connectors: {
     inputOffset: {
-      top: -110,
-      left: 0,
+      top: -130,
+      left: -1,
     },
     outputOffset: {
       top: -25,
@@ -82,9 +82,8 @@ function makeOscillator(config) {
     ...baseNode,
     node: node,
     left: config.left,
+    top: config.top,
   };
-  /*baseNode.node = node;
-  baseNode.left = config.left;*/
 
   return returnNode;
 }
@@ -118,9 +117,14 @@ function makeGain(config) {
     },
   };
 
-  baseNode.node = gainNode;
+  let returnNode = {
+    ...baseNode,
+    node: gainNode,
+    left: config.left,
+    top: config.top,
+  };
 
-  return baseNode;
+  return returnNode;
 }
 
 export function makeNode(config) {
