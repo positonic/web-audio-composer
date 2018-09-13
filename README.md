@@ -3,8 +3,8 @@ The idea behind this app is the give the user a GUI interface into building Web 
 
 To install clone this repo and run 
 
-npm run i
+     npm run i
 
 then to start run
 
-npm run start
+     npm run start
