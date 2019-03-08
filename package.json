@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
-    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "7.3.0",
     "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
     "@babel/plugin-proposal-function-sent": "^7.0.0",
     "@babel/plugin-proposal-numeric-separator": "^7.0.0",
@@ -58,6 +58,7 @@
     "react-refetch": "^1.0.4",
     "recharts": "1.5.0",
     "redux": "^4.0.0",
-    "tunajs": "^1.0.1"
+    "tunajs": "^1.0.1",
+    "url-parse": "1.4.4"
   }
 }
