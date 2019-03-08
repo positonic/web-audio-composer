@@ -38,7 +38,7 @@ export function Play(nodes, makePlay) {
   console.log(voiceConfig.oscillators);
   let voice = Voice(context, voiceConfig);
 
-  //var masterVca = voice.setupRoutedOscillators();
+  //var masterVca = voicee.setupRoutedOscillators();
   var masterVca = voice.setupOscillators();
 
   voice.setUpFilters(voiceConfig.filters, masterVca, context.destination);
@@ -71,8 +71,8 @@ const voiceConfig = {
       type: 'filter',
       props: {
         type: 'lowpass',
-        value: 1000,
-      },
+        value: 1000
+      }
     },
     {
       type: 'filter',
@@ -81,8 +81,8 @@ const voiceConfig = {
         rate: 1.5,
         feedback: 0.2,
         delay: 0.0045,
-        bypass: 0,
-      },
+        bypass: 0
+      }
     },
     {
       type: 'filter',
@@ -93,8 +93,8 @@ const voiceConfig = {
         wetLevel: 0.25, //0 to 1+
         dryLevel: 1, //0 to 1+
         cutoff: 2000, //cutoff frequency of the built in lowpass-filter. 20 to 22050
-        bypass: 0,
-      },
+        bypass: 0
+      }
     },
     {
       type: 'filter',
@@ -105,8 +105,8 @@ const voiceConfig = {
         feedback: 0.2, //0 to 1+
         stereoPhase: 30, //0 to 180
         baseModulationFrequency: 700, //500 to 1500
-        bypass: 0,
-      },
-    },
-  ],
+        bypass: 0
+      }
+    }
+  ]
 };
